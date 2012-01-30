@@ -1,0 +1,7 @@
+# Be sure to restart your server when you modify this file.
+
+# Your secret key for verifying the integrity of signed cookies.
+# If you change this key, all old signed cookies will become invalid!
+# Make sure the secret is at least 30 characters and all random,
+# no regular words or you'll be exposed to dictionary attacks.
+Dummy::Application.config.secret_token = '067c8349dcd85812482a60536ea678eb7bacb757cdcab4ad41d0325664462f3474b48d474c1994429c754498049326b18a6c4797cd45b35c98bb8a4bc2816ed1'
