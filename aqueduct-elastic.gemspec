@@ -1,6 +1,6 @@
 # Compiling the Gem
 # gem build aqueduct-elastic.gemspec
-# gem install ./aqueduct-elastic-x.x.x.gem
+# gem install ./aqueduct-elastic-x.x.x.gem --no-ri --no-rdoc --local
 #
 # gem push aqueduct-elastic-x.x.x.gem
 # gem list -r aqueduct-elastic
@@ -20,8 +20,9 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/remomueller"
   s.summary     = "Elastic repository connector for Aqueduct"
   s.description = "Connects and Elastic file server as an aqueduct repository"
+  s.license     = 'CC BY-NC-SA 3.0'
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["aqueduct-elastic.gemspec", "CHANGELOG.rdoc", "LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["aqueduct-elastic.gemspec", "CHANGELOG.md", "LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 3.2.1"
